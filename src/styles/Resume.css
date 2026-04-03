@@ -1,0 +1,80 @@
+/* ===== CONTAINER ===== */
+.resume-container {
+  padding: 40px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* ===== UPLOAD BOX ===== */
+.upload-box {
+  padding: 40px;
+  border-radius: 20px;
+
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+
+  border: 1px dashed rgba(56, 189, 248, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-box:hover {
+  border-color: #38bdf8;
+  transform: scale(1.02);
+}
+
+.file-name {
+  margin-top: 10px;
+  color: #94a3b8;
+}
+
+/* ===== AI RESULT ===== */
+.ai-result {
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 20px;
+
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+/* ===== SCORE CIRCLE ===== */
+.score {
+  margin: 20px 0;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: conic-gradient(#38bdf8 0%,
+      #38bdf8 calc(var(--score) * 1%),
+      #1e293b calc(var(--score) * 1%));
+
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/* ===== SKILLS ===== */
+.skills {
+  margin-top: 20px;
+}
+
+.skill-chip {
+  display: inline-block;
+  margin: 5px;
+  padding: 6px 14px;
+  border-radius: 20px;
+
+  background: rgba(56, 189, 248, 0.2);
+  color: #38bdf8;
+}

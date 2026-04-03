@@ -1,0 +1,137 @@
+/* FULL SCREEN */
+.login-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: oblique;
+
+  /* 🌌 DARK GRADIENT BACKGROUND */
+  background: linear-gradient(135deg, #0a0f1c, #111827);
+}
+
+/* 🔥 LOGIN CARD (ANIME STYLE) */
+.login-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  width: 350px;
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  text-align: center;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.1);
+
+  /* 💎 PREMIUM ANIMATION */
+  animation: floatCard 4s ease-in-out infinite,
+             glowPulse 3s infinite alternate,
+             slideUp 0.8s ease;
+}
+
+/* 🎯 TITLE */
+.login-card h2 {
+  margin-bottom: 10px;
+}
+
+/* SUBTITLE */
+.login-subtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #9ca3af;
+}
+
+/* FORM */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* INPUT */
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #1f2937;
+  color: white;
+  transition: 0.3s;
+}
+
+/* INPUT FOCUS */
+.input-group input:focus {
+  border: 1px solid #38bdf8;
+  box-shadow: 0 0 10px #38bdf8;
+}
+
+/* BUTTON */
+.login-btn {
+  padding: 10px;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.login-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #38bdf8;
+}
+
+/* FOOTER */
+.login-footer {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* REGISTER LINK */
+.login-footer span {
+  color: #38bdf8;
+  cursor: pointer;
+}
+.login-footer span:hover {
+  text-decoration: underline;
+}
+
+/* ========================= */
+/* 🎬 ANIME ANIMATIONS BELOW */
+/* ========================= */
+
+/* FLOATING EFFECT */
+@keyframes floatCard {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* GLOW EFFECT */
+@keyframes glowPulse {
+  from {
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+  }
+  to {
+    box-shadow: 0 0 35px rgba(255, 64, 129, 0.6);
+  }
+}
+
+/* ENTRY ANIMATION */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 💎 HOVER 3D EFFECT */
+.login-card:hover {
+  transform: scale(1.03) rotateX(4deg) rotateY(4deg);
+  transition: 0.4s;
+}

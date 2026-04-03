@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0f172a;
+  font-style: oblique;
+}
+
+/* MAIN */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  color: white;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 250px;
+  background: #020617;
+  padding: 20px;
+  border-right: 1px solid #1e293b;
+}
+
+.sidebar h2 {
+  margin-bottom: 15px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-chip {
+  background: #2563eb;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* JOB FEED */
+.job-feed {
+  flex: 1;
+  padding: 20px;
+}
+
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.job-card {
+  background: #020617;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+  border: 1px solid #1e293b;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.4);
+}
+
+/* TEXT */
+.company {
+  color: #94a3b8;
+}
+
+.location {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.salary {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+/* MATCH BAR */
+.match-bar {
+  height: 6px;
+  background: #1e293b;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.match-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #3b82f6);
+  border-radius: 10px;
+}
+
+.match-text {
+  font-size: 13px;
+}
+
+/* BUTTON */
+.apply-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background: #2563eb;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background: #1d4ed8;
+}

@@ -1,0 +1,146 @@
+/* ===== NAVBAR CONTAINER ===== */
+.navbar {
+  position: sticky;
+  top: 15px;
+  margin: 0 auto;
+  width: 95%;
+  padding: 12px 35px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-style: italic;
+  border-radius: 14px;
+
+  /* Glass effect */
+  background: rgba(10, 25, 47, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  /* Glow border */
+  border: 1px solid rgba(0, 198, 255, 0.2);
+
+  /* Depth */
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
+
+  z-index: 1000;
+}
+
+/* ===== LOGO ===== */
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transition: transform 0.3s ease;
+}
+
+/* FIXED (was .logo:hover) */
+.logo-text:hover {
+  transform: scale(1.05);
+}
+
+/* ===== NAV LINKS ===== */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #94a3b8;
+  font-size: 15px;
+  font-weight: 500;
+
+  padding: 6px 12px;
+  border-radius: 20px;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover Glow */
+.nav-links li a:hover {
+  color: #38bdf8;
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.7);
+}
+
+/* ACTIVE LINK */
+.nav-links li a.active {
+  background: rgba(56, 189, 248, 0.15);
+  color: #d8d8d8;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+}
+
+/* ===== BUTTONS ===== */
+.auth-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+/* COMMON BUTTON STYLE */
+.btn {
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* LOGIN BUTTON */
+.login {
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  color: #38bdf8;
+}
+
+.login:hover {
+  background: rgba(56, 189, 248, 0.15);
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+
+/* REGISTER BUTTON */
+.register {
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: white;
+  font-weight: 500;
+
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+}
+
+.register:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 0 25px rgba(56, 189, 248, 1);
+}
+
+/* ===== SCROLL EFFECT ===== */
+.navbar.scrolled {
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  background: rgba(10, 25, 47, 0.8);
+}
+
+/* ===== RESPONSIVE (IMPORTANT) ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .auth-buttons {
+    gap: 8px;
+  }
+
+  .btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
